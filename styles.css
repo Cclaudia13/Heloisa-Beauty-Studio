@@ -1,0 +1,491 @@
+*{
+    font-size: 18px;
+    font-family: "Aileron", sans-serif;
+}
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+    color: #9F6656;
+    border-radius: 50%;
+}
+
+
+body {
+    line-height: 1.6;
+    background-color: #F9F2ED; /* Cor mais escura para o fundo */
+    color: #ffffff; /* Texto claro para contraste */
+    /* Restante do CSS do body */
+}
+.nav-link {
+    font-size: 1.4em;
+    color: #654A3C; 
+}
+.nav-link:hover {
+  color: #9F6656;  
+}
+
+.card-list {
+ width: 50%;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ padding-top: 2em;
+ border-radius: 50%;
+}
+
+.card {
+ width: 50%;
+ height: 200px;
+ background-color: #f9f5ED;
+ padding: 1em;
+ border: none;
+}
+
+.card-img-top {
+    width: 80%;
+    border-radius: 50%;
+
+}
+
+.photo-container {
+    width: 100%;
+    height: 1000px;
+    padding-top: 2rem;
+    border-bottom: 1px solid #9F6656; /* Adiciona uma borda inferior para definição, opcional */
+    display: flex;
+}
+
+.photo-container #logo {
+    width: 40%;
+    padding:40px ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-container img {
+  width: 45%; /* Defina a largura máxima para 100% para se ajustar ao contêiner */
+  max-height: 100%;
+  height: 1000px;
+}
+
+#logo img {
+    height: 16rem;
+    margin-top: 5%;
+}
+.bio-text {
+    width: 100%;
+
+}
+
+.heloisabio {
+    color: #654A3C;
+    margin-top: 3rem;
+    
+}
+.photo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    /* Estilos adicionais para o texto aqui */
+}
+
+
+.navbar {
+    background-color: #F9F2ED; /* Cor de fundo clara para a navbar */
+    border-bottom: 1px solid #9F6656; /* Adiciona uma borda inferior para definição, opcional */
+}
+
+/* Se você quiser alterar a cor do texto na navbar para melhor contraste, você pode adicionar: */
+.navbar-light .navbar-nav .nav-link {
+    color: #654A3C !important; /* Cor escura para os links na navbar para contraste */
+}
+
+
+.hero-text {
+    text-align: center !important; /* Centraliza o conteúdo */
+    padding-top: 50px; /* Espaço no topo */
+    color: #9F6656; /* Cor do texto */
+}
+
+.hero-text h1 {
+    margin-top: 280px;
+    margin-bottom: 20px; /* Espaço entre o h1 e o parágrafo */
+    text-align: center !important;
+    text-shadow: 2px 2px 8px #ffffff;
+    font-weight: bolder;
+    
+}
+
+.hero-text p {
+    padding-top: 80px;
+    max-width: 600px;
+    text-shadow: 2px 2px 8px #ffffff;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin:auto; /* Centraliza o parágrafo se ele tiver uma largura máxima */
+    text-align: center !important;
+}
+
+.card-container {
+
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    padding: 30px; 
+    margin: auto;
+    color: #654A3C;
+    width: 90%;
+}
+ 
+.cta {
+    width: 400px; /* Adjusted width to ensure 2 cards in each one row */
+    height: 655px; /* Fixed height for all cards */
+    margin: 10px; 
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px;
+    padding-bottom: 15px;
+    background-color: #f9f5ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; /* Makes sure that padding doesn't add to the width */
+}
+
+
+.cta h3 {
+    background-color: #ac9994; /* Darkest color of the palette */
+    color: #fff; 
+    padding: 7px;
+    margin: 0;
+    font-size: 21px;
+    padding-top: 10px;
+  }
+
+/* hover shadow effect */
+.cta:hover {
+    box-shadow: 0px 8px 30px rgba(21, 12, 1, 0.3);
+    transform: translateY(-4px);
+  }
+
+  .cta img {
+    max-width: 100%; /* Ensures image does not exceed the width of the card */
+    max-height: 100%; /* Optional: limits the image height to the card, if necessary */
+    
+    object-fit: cover; /* Covers the designated area without distortion, may crop the image */
+    border-radius: 50%; /* Keeps the image round, if desired */
+}
+
+.btn-cta {
+    background-color: #ac9994;
+}
+
+.btn {
+    background-color: #ac9994; /* Default button color */
+    font-size: 21px;
+    color: #fff; /* Text color */
+    transition: background-color 0.4s; /* Smooth transition for hover effect */
+}
+    
+.btn:hover, .btn:focus, .btn:active {
+    background-color: #987875; /* A slightly darker brown shade for hover/focus/active */
+    color: #fff; /* Keeps text color white */
+}
+.btn:focus {
+    outline: 2px solid #654A3C; /* Example with dark brown */
+    /* Replace #654A3C with #000000 for black or #FFFFFF for white, as preferred */
+}
+
+    
+    
+    
+   
+        .parallax {
+            /* The image used */
+            background-image: url("images.img/heloisabrancomenor.jpg");
+          
+            /* Set a specific height */
+            min-height: 900px; 
+          
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid #987875; 
+        }  
+    
+.btn {
+    padding: 10px 12px; /* Diminui o padding para reduzir altura e largura */
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte, se necessário, para manter a proporcionalidade */
+    margin-top: 10px; /* Garante algum espaço entre o texto do card e o botão */
+    background-color: #d09989;  
+}
+
+footer {
+    
+    color: #654A3C; 
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 3rem; /* Adiciona padding para espaço acima e abaixo do texto */
+}
+
+
+
+.service-details {
+    color: #654A3C; /* Cor do texto */
+    margin: 20px auto; /* Adiciona margem no topo e na base, e centraliza horizontalmente */
+    max-width: 80%; /* Limita a largura máxima para melhorar a legibilidade */
+    padding: 20px; /* Espaçamento interno para não tocar as bordas */
+}
+
+.service-details h2 {
+    
+        font-weight: bold; 
+        color: #ac9994; 
+        font-size: 24px; 
+        margin-bottom: 15px; 
+    }
+    
+
+
+.service-details ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+.service-details li {
+    margin-bottom: 10px; 
+    padding-left: 20px; 
+    color: #654A3C;
+}
+
+.service-details li::before {
+    content: "•"; /* Marcador personalizado */
+    color: #ac9994; /* Cor do marcador para combinar com os títulos */
+    left: 0;
+    font-size: 1em; /* Ajusta o tamanho do marcador se necessário */
+}
+
+
+ 
+.service-card {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaço entre imagem e texto */
+    margin: 95px auto;
+    width: 80%;
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.service_image {
+    width: 40%; 
+    height: auto;
+    align-items: self-end;
+}
+
+.service-content {
+    width: 50%; /* Ajuste conforme necessário */
+    padding: 5px;
+    color: #654A3C;
+}
+
+.service-content {
+    display: flex; /* Habilita Flexbox */
+    align-items: flex-start; /* Alinha itens ao topo */
+    justify-content: space-between; /* Espaço entre texto e imagem */
+    width: 80%; /* Ou 50%, ajuste conforme necessário */
+    margin: 0 3rem;
+    padding: 5px;
+    color: #654A3C;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+}
+
+.service-content .service_image {
+    width: 40%; /* Ajuste a largura da imagem conforme necessário */
+    order: 2; /* Move a imagem para a direita */
+    margin-left: auto; /* Empurra a imagem para a direita */
+}
+.service-content h2 {
+    width: 100%;
+}
+service-content > * {
+    flex: 1 1 45%; /* Dá flexibilidade aos itens para ocuparem espaço, mas não mais que 45% */
+}
+
+.Pricing > div {
+    display: flex; /* Ativa o Flexbox */
+    width: 100%; /* Ocupa 100% da largura da página */
+}
+
+.Pricing img {
+    width: 50%; /* Cada imagem ocupa metade da largura do container */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço disponível sem distorcer */
+}
+.socialmedia {
+    
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+    
+}
+
+.socialmedia a img {
+    width: 3rem;
+}
+/* Possible item to add */
+icons {
+    height: 200px;
+}
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    overflow: hidden;
+  }
+  
+  .svgIcon {
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+  }
+  .button {
+    width: 45px;
+    height: 45px;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+   0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+   0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-bottom: 3px;
+  }
+  
+  .button::before {
+    background-color: transparent;
+    content: "f";
+    font-size: 1.6em;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .button::after {
+    content: "acebook";
+    background-color: transparent;
+    font-size: 0;
+    opacity: 0;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    transform: translateX(60px);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .button:hover {
+    width: 160px;
+    border-radius: 30px;
+  }
+  
+  .button:hover::after {
+    opacity: 1;
+    font-size: 1.6em;
+    transform: translateX(0px);
+  }
+  
+  .button:hover .shine {
+    transform: translate(-70px ,10px);
+  }
+
+  .appointments {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .photo-container img { 
+         width:100%;
+     }
+     .photo-container {
+         display: block;
+         height: auto;
+      }
+      .photo-container #logo {
+         width: 90%;
+      }
+     .service-card {
+         width: 90%; /* Cards ocupam toda a largura em dispositivos médios, como tablets */
+         display: block;
+         
+     }
+     .service_image {
+        width: 100%;
+     }
+ }
