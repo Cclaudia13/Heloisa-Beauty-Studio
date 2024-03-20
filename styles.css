@@ -10,6 +10,11 @@
     border-radius: 50%;
 }
 
+            html {
+                    scroll-behavior: smooth;
+                }
+        
+
 
 body {
     line-height: 1.6;
@@ -468,6 +473,20 @@ icons {
   .appointments {
     width: 100%;
   }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    overflow: hidden; /* Ensures nothing spills out */
+  }
+  
+  .video-container video {
+    width: 60%; 
+    height:auto;
+  }
+  
 
   @media screen and (max-width: 768px) {
     .photo-container img { 
