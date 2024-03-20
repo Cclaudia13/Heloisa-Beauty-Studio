@@ -74,7 +74,7 @@ body {
 .photo-container img {
   width: 45%; /* Defina a largura máxima para 100% para se ajustar ao contêiner */
   max-height: 100%;
-  height: 1000px;
+  height: auto;
 }
 
 #logo img {
@@ -97,7 +97,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFF;
-    /* Estilos adicionais para o texto aqui */
+    
 }
 
 
