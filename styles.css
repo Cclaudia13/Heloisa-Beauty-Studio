@@ -62,7 +62,7 @@ body {
 }
 
 .photo-container #logo {
-    width: 40%;
+    /*width: 40%;*/
     padding:40px ;
     margin: 0 auto;
     display: flex;
