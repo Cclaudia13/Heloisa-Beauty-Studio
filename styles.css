@@ -72,7 +72,7 @@ body {
 }
 
 .photo-container img {
-  /*width: 45%;*/ /* Defina a largura máxima para 100% para se ajustar ao contêiner */
+  /*width: 45%;*/ 
   max-height: 100%;
   height: auto;
 }
