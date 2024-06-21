@@ -493,6 +493,11 @@ icons {
     width: 60%; 
     height:auto;
   }
+
+  #clau {
+    width: 100%;
+    text-align: right;
+  }
   
 
   @media screen and (max-width: 768px) {
